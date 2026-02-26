@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 44 50% 97%;
+  --foreground: 214 50% 13%;
+  --primary: 200 65% 31%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 187 48% 82%;
+  --secondary-foreground: 209 63% 21%;
+  --muted: 203 46% 95%;
+  --muted-foreground: 210 30% 40%;
+  --accent: 193 58% 88%;
+  --accent-foreground: 213 54% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 214 50% 13%;
+  --border: 206 40% 85%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  overflow-x: hidden;
+  background-image: radial-gradient(circle at 10% -10%, rgba(74, 163, 196, 0.18), transparent 38%),
+    radial-gradient(circle at 90% 0%, rgba(10, 49, 87, 0.12), transparent 33%);
+}
+
+.wave-grid {
+  background-image: linear-gradient(rgba(10, 56, 94, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 56, 94, 0.04) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(2, 15, 29, 0.16) 0%, rgba(2, 15, 29, 0.5) 85%);
+}
+
+.hero-pan {
+  animation: hero-pan 24s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}
+
+@keyframes hero-pan {
+  0% {
+    transform: scale(1.08) translate3d(-2%, 0, 0);
+  }
+  50% {
+    transform: scale(1.12) translate3d(2%, -1.5%, 0);
+  }
+  100% {
+    transform: scale(1.08) translate3d(-2%, 0, 0);
+  }
+}
+
+main {
+  padding-bottom: calc(5.25rem + env(safe-area-inset-bottom));
+}
+
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-bottom: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-pan {
+    animation: none;
+    transform: scale(1.05);
+  }
+}
+

@@ -1,0 +1,45 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="28" y1="28" x2="228" y2="228" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A3960"/>
+      <stop offset="1" stop-color="#082543"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="48" y1="118" x2="206" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#80DAE8"/>
+      <stop offset="1" stop-color="#5AB8D5"/>
+    </linearGradient>
+    <linearGradient id="waveSoft" x1="50" y1="143" x2="205" y2="186" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D1F3F6"/>
+      <stop offset="1" stop-color="#8FD8DF"/>
+    </linearGradient>
+    <filter id="glow" x="36" y="38" width="184" height="180" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <rect x="16" y="16" width="224" height="224" rx="56" fill="url(#bg)"/>
+  <circle cx="194" cy="74" r="14" fill="#F6D08B"/>
+  <circle cx="194" cy="74" r="24" fill="#F6D08B" opacity="0.22" filter="url(#glow)"/>
+
+  <path
+    d="M50 130C62 119 75 114 90 114C109 114 118 129 136 129C153 129 163 118 178 118C190 118 199 123 206 130"
+    stroke="url(#wave)"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+  <path
+    d="M50 160C62 149 76 143 92 143C111 143 121 157 138 157C154 157 165 147 180 147C191 147 200 151 206 158"
+    stroke="url(#waveSoft)"
+    stroke-width="9"
+    stroke-linecap="round"
+    opacity="0.95"
+  />
+
+  <path
+    d="M68 96C78 84 94 76 112 76C133 76 149 87 157 101"
+    stroke="#9FE7ED"
+    stroke-width="7"
+    stroke-linecap="round"
+    opacity="0.8"
+  />
+</svg>

@@ -1,0 +1,46 @@
+<svg width="820" height="220" viewBox="0 0 820 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="markBg" x1="18" y1="18" x2="178" y2="178" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A3960"/>
+      <stop offset="1" stop-color="#082543"/>
+    </linearGradient>
+    <linearGradient id="markWaveA" x1="38" y1="90" x2="160" y2="124" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#80DAE8"/>
+      <stop offset="1" stop-color="#5AB8D5"/>
+    </linearGradient>
+    <linearGradient id="markWaveB" x1="40" y1="110" x2="160" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D1F3F6"/>
+      <stop offset="1" stop-color="#8FD8DF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="18" y="18" width="160" height="160" rx="38" fill="url(#markBg)"/>
+  <circle cx="144" cy="58" r="10" fill="#F6D08B"/>
+  <path
+    d="M42 98C51 89 62 84 75 84C90 84 98 95 111 95C124 95 132 86 145 86C151 86 156 89 160 93"
+    stroke="url(#markWaveA)"
+    stroke-width="9"
+    stroke-linecap="round"
+  />
+  <path
+    d="M42 122C51 113 62 108 76 108C91 108 99 118 112 118C124 118 133 111 146 111C151 111 156 113 160 117"
+    stroke="url(#markWaveB)"
+    stroke-width="7"
+    stroke-linecap="round"
+    opacity="0.95"
+  />
+  <path
+    d="M56 72C64 62 77 56 91 56C106 56 118 63 125 74"
+    stroke="#9FE7ED"
+    stroke-width="5"
+    stroke-linecap="round"
+    opacity="0.85"
+  />
+
+  <text x="212" y="98" fill="#082543" font-size="58" font-family="Georgia, 'Times New Roman', serif" letter-spacing="1">
+    AZURE WAVES
+  </text>
+  <text x="215" y="138" fill="#3D6282" font-size="20" font-family="Arial, Helvetica, sans-serif" letter-spacing="8">
+    RESORT
+  </text>
+</svg>

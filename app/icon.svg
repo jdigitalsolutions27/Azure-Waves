@@ -1,0 +1,32 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="7" y1="7" x2="57" y2="57" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A3960"/>
+      <stop offset="1" stop-color="#082543"/>
+    </linearGradient>
+    <linearGradient id="waveA" x1="12" y1="30" x2="52" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#80DAE8"/>
+      <stop offset="1" stop-color="#5AB8D5"/>
+    </linearGradient>
+    <linearGradient id="waveB" x1="12" y1="38" x2="52" y2="49" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D1F3F6"/>
+      <stop offset="1" stop-color="#8FD8DF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#bg)"/>
+  <circle cx="47" cy="18" r="4" fill="#F6D08B"/>
+  <path
+    d="M13 31C16 28 19 26.8 23 26.8C28 26.8 30.6 30.7 35 30.7C39 30.7 42 27.8 46 27.8C49 27.8 51 28.8 52 30.6"
+    stroke="url(#waveA)"
+    stroke-width="3.4"
+    stroke-linecap="round"
+  />
+  <path
+    d="M13 40.2C16 37.2 19.5 35.7 23.8 35.7C28.8 35.7 31.3 39 35.7 39C39.4 39 42.2 36.6 46.3 36.6C48.8 36.6 50.8 37.4 52 39"
+    stroke="url(#waveB)"
+    stroke-width="2.8"
+    stroke-linecap="round"
+  />
+  <path d="M18 23C20.4 20 24.1 18 28.2 18C32.7 18 36.2 20.3 38 23.4" stroke="#9FE7ED" stroke-width="2.3" stroke-linecap="round" opacity="0.85"/>
+</svg>
