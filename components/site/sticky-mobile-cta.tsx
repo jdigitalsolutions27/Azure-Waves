@@ -1,9 +1,15 @@
+"use client";
+
 import { MessageCircle, PhoneCall } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { resortInfo } from "@/lib/site";
 
 export function StickyMobileCTA() {
+  const pathname = usePathname();
+  if (pathname.startsWith("/stay/")) return null;
+
   return (
     <div className="fixed inset-x-0 bottom-0 z-50 border-t border-primary/20 bg-white/95 px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 shadow-soft backdrop-blur md:hidden">
       <div className="mx-auto grid max-w-md grid-cols-3 gap-2 text-xs font-semibold">

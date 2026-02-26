@@ -49,7 +49,7 @@ export default function RoomDetailsPage({ params }: Props) {
   const similarRooms = rooms.filter((item) => item.slug !== room.slug && item.view === room.view).slice(0, 3);
 
   return (
-    <div className="container py-10 sm:py-12 md:py-14">
+    <div className="container pb-28 pt-10 sm:pb-32 sm:pt-12 md:pb-14 md:pt-14">
       <div className="grid gap-10 lg:grid-cols-[1.3fr_0.7fr]">
         <div className="space-y-6">
           <div>
@@ -141,9 +141,9 @@ export default function RoomDetailsPage({ params }: Props) {
         </div>
       </section>
 
-      <div className="fixed inset-x-0 bottom-16 z-40 border-t border-primary/10 bg-white/95 p-3 backdrop-blur md:hidden">
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-primary/10 bg-white/95 px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur md:hidden">
         <Button asChild className="w-full">
-          <Link href={`/booking?roomId=${room.id}`}>Book This Room � {formatCurrency(room.price)}/night</Link>
+          <Link href={`/booking?roomId=${room.id}`}>Book This Room - {formatCurrency(room.price)}/night</Link>
         </Button>
       </div>
     </div>

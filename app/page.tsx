@@ -51,7 +51,7 @@ export default function HomePage() {
           <div className="hero-overlay absolute inset-0" />
 
           <div className="container relative z-10 flex h-full flex-col justify-center text-[#f8f6f1]">
-            <div className="max-w-4xl rounded-[1.7rem] border border-white/20 bg-[linear-gradient(135deg,rgba(6,26,46,0.46),rgba(7,42,67,0.28))] p-5 shadow-[0_30px_90px_rgba(3,21,41,0.45)] sm:rounded-[2.2rem] sm:p-7 md:p-10">
+            <div className="max-w-4xl rounded-[1.7rem] border border-white/25 bg-[linear-gradient(135deg,rgba(4,22,40,0.66),rgba(6,33,53,0.48))] p-5 shadow-[0_30px_90px_rgba(3,21,41,0.45)] sm:rounded-[2.2rem] sm:p-7 md:bg-[linear-gradient(135deg,rgba(4,22,40,0.56),rgba(6,33,53,0.4))] md:p-10">
               <FadeIn>
                 <Badge className="w-fit bg-white/15 text-white">Luxury Beachfront Retreat</Badge>
               </FadeIn>
@@ -75,7 +75,7 @@ export default function HomePage() {
               </FadeIn>
 
               <FadeIn delay={0.32}>
-                <div className="mt-8 grid max-w-2xl gap-3 rounded-2xl border border-white/20 bg-white/10 p-4 sm:rounded-3xl sm:p-5 md:grid-cols-3">
+                <div className="mt-8 grid max-w-2xl gap-3 rounded-2xl border border-white/25 bg-[#071f34]/50 p-4 sm:rounded-3xl sm:p-5 md:grid-cols-3 md:bg-white/10">
                   <div>
                     <p className="text-xs uppercase tracking-[0.18em] text-[#a9c2d8]">Guest Rating</p>
                     <p className="mt-2 inline-flex items-center gap-2 text-xl font-semibold">
@@ -101,7 +101,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="availability" className="container relative z-20 -mt-16 sm:-mt-20 md:-mt-24">
+      <section id="availability" className="container relative z-20 -mt-8 sm:-mt-14 md:-mt-24">
         <AvailabilityWidget />
       </section>
 

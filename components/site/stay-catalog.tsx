@@ -214,7 +214,7 @@ export function StayCatalog() {
                 <p className="font-semibold text-foreground">{room.name}</p>
                 <p className="mt-1 text-muted-foreground">{formatCurrency(room.price)} / night</p>
                 <p className="mt-1 text-muted-foreground">{room.capacity} guests</p>
-                <p className="mt-1 text-muted-foreground">{room.size} � {room.bedType}</p>
+                <p className="mt-1 text-muted-foreground">{room.size} - {room.bedType}</p>
               </div>
             ))}
           </div>
